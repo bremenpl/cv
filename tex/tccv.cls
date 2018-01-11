@@ -21,6 +21,8 @@
 %   macros, so the document is much easier to read (and customize);
 % * it is plain LaTeX/Koma-script, so the CV can be compiled
 %   with the usual tools, latex and pdflatex included.
+%
+% 	Update: Edited by Lukasz Przenioslo 2018
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{tccv}
@@ -129,9 +131,9 @@
     \newcommand*\inskip{}
     \renewcommand\item[3]{%
 	\inskip%
-	{\raggedleft\textsc{##1}\\[1pt]}
+	{\raggedleft\textsc{$ \bullet $ ##1}\\[1pt]}
 	{##2}\\[2pt]
-	{\Large\textit{##3}}
+	{\large\textit{##3}}
 	\medskip
 	\renewcommand\inskip{\bigskip}}}
     {\bigskip}
