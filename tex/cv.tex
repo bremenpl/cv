@@ -45,11 +45,11 @@ SMT machinery hardware assembly, faulty parts service, existing designs debuggin
 
 \item[MA diploma]{2014--16}
      {Electrical engineering}
-     {ZUT, Szczecin}
+     {West Pomeranian University of Technology, Szczecin}
 
 \item[BA diploma]{2010--14}
      {Electronics engineering}
-     {ZUT, Szczecin}
+     {West Pomeranian University of Technology, Szczecin}
 
 \end{yearlist}
 
@@ -296,12 +296,13 @@ SMT machinery hardware assembly, faulty parts service, existing designs debuggin
 	\item experienced with working in multicultural environments.
 	\item experienced with leading engineering teams in various embedded projects.
 	\item experienced in 3D design (Rhino) and general 3D printing (mostly for support products, such as electronics devices prototype cases).
+	\item long time Beaglebone and Raspberry Pi based systems designer (HW and FW/ SW).
 	 
 \end{itemize}
 
 \clearpage
 
-\section{Appendix D: Work references: clients/ employers}
+\section{Appendix D: Work references (clients/ employers)}
 \label{sec:clients}
 
 This section lists some of the companies (clients or employers) I have worked for in the past. It provides only the basic information that is not covered by the NDA's/ contracts, such as company name, manager/ supervisor name + position at the time and contact info. The list is not sorted in any specific way- it is (time wise) randomly ordered. \\
@@ -348,15 +349,79 @@ This section lists some of the companies (clients or employers) I have worked fo
 
 \clearpage
 
-\section{Appendix E: Work references: projects}
+\section{Appendix E: Work references (projects)}
 
 The section presents some of the projects I have participated in commercially. In some of them I participated partially, as an engineer in a bigger team. In others, I participated fully, providing a complete product from ground-up. The order in which the projects are listed is random and has no correlation with the order of listed companies  \hyperref[sec:clients]{in the prior section}. \\
 
 \begin{yearlist}
 
-\item[Placeholder]{•}
-     {Placeholder}
-     {Placeholder}
+\item[Full product bringup]{•}
+     {Battery management system (BMS) based on lead acid and lithium chemistry cells}
+     {Designed the complete product from ground-up, including: client requirements evaluation, hardware components proposals, hardware schematics and PCB design, hardware simulations, firmware development, BOM optimization, prototype and mass production management and scheduling. The end product was intended for high power battery management installations in critical infrastructures, such as hospitals or server farms. The designed BMS allowed for accurate telemetry of the battery electrical and physical parameters. Self developed algorithm allowed for accurate battery internal impedance (IR) calculations.}
+     
+\item[Hardware description and kernel drivers development]{•}
+     {FPGA based SBC controller module}
+     {Designed a board controller for a client provided, existing single board computer. The work involved complete VHDL code design for the controller FPGA (managing different hardware parts in real time), as well as writing the Linux kernel driver for the main on-board SoC communicating with the given controller.}
+     
+\item[Full product bringup]{•}
+     {Integrated impedance scanner for biomeasurement applications}
+     {Designed the hardware, firmware and software for a medical device prototype used to measure electrical parameters, allowing to perform accurate bioimpedance calculations.}
+     
+\item[Hardware and firmware development]{•}
+     {IoT self-sustainable, smart weather stations}
+     {Designed the hardware and firmware for networked weather stations used for crops harvesting process optimization. The design involved low power design in both hardware and firmware layers. Multiple stations were placed on a single crops field to periodically measure atmospheric parameters, which would then be fed to the centralized server via GSM technology. Server backend and web frontend were developed by other team members.}
+     
+\item[Hardware and firmware development]{•}
+     {Power line communication (PLC) emergency lights system}
+     {Designed the firmware, software and parts of the hardware for an industrial scale system used for emergency lights power cycling management. The communication with smart light modules was done over PLC, which allowed for feasible integration within legacy electrical grids in old buildings.}   
+     
+\item[Hardware and firmware development]{•}
+     {Semi-automatic stencil printer}
+     {Designed the hardware, firmware and PC control software for a semi-automatic Stencil Printer (device used for solder paste distribution over PCBs during production). The design involved real time I/O handling and motor control.}
+     
+\item[Hardware and firmware development]{•}
+     {Semi-automatic stencil printer}
+     {Designed the hardware, firmware and PC control software for a semi-automatic Stencil Printer (device used for solder paste distribution over PCBs during production). The design involved real time I/O handling and motor control.}    
+     
+\item[Software development]{•}
+     {Seamanship improvement voyage suite}
+     {Created the backend and frontend for a seamanship improvement software to be used in the maritime market. The application used in different modes, could be utilized by the captains on the ship's bridge, as well as by the operators in fleet operation centers. The aim of the project was to reduce potential nautical incidents during cruising.}        
+     
+\item[Project management and hardware design consulting]{•}
+     {High efficiency wireless + wired gateway}
+     {Overseen the hardware product development, i.e. validated and proposed electronic design and thermal solutions, created hardware simulation scenarios, optimized bill of materials (BOMs), conducted hardware tests, designed prototypes.}             
+
+\end{yearlist}
+
+\begin{yearlist}
+
+\item[Firmware and software development]{•}
+     {Automatic SMD components feeder}
+     {Designed the firmware for various automatic feeder devices used with SMT Pick \& Place machines. Created the PC suite software used for manufacturing and testing purposes. Created and assembled prototypes.}
+     
+\item[Hardware and firmware development]{•}
+     {Smart UPS}
+     {Designed the hardware and firmware for a multi-functional UPS device intended for the maritime market. It allowed for the configuration of most of the electrical, operational parameters (over multiple USB endpoints/ protocols). It consisted of multiple electrical protections (implemented in hardware in firmware) and allowed for smart charging and discharging of the cells to optimize energy utilization.}
+     
+\item[Hardware and firmware development]{•}
+     {Soldering paste dispenser head}
+     {Designed the hardware and firmware for a multi-functional/ multi-modal soldering paste dispenser head mounted in a Pick \& Place machine. It allowed for efficient soldering paste distribution over different subtracts (mostly PCBs), utilizing different dispensing methods (i.e., solder paste squeezing or "spitting"). It kept the mounted solder paste within a controlled temperature to avoid drying.}
+     
+\item[Firmware development]{•}
+     {Electrosurgery knife}
+     {Designed the firmware for an electrosurgery device within a team of developers. The device was intended for a medical market and allowed for cutting and coagulating living tissues. Lead the firmware architectural design for the product. Conducted code reviews. Designed unit tests.}     
+     
+\item[Full product bringup]{•}
+     {Multimotor controller}
+     {Designed a complete device (hardware, firmware and PC tuning software) for dual (various) motor control in real time. The product supported two different motor types (DC, BLDC, PMSM, Stepper  or VCM) driving simultaneously. The devices was used as part of different industrial machines that had to utilize motor controlled linear or rotary movement. It consisted of numerous DPS algorithms implemented for smooth control operation.}  
+     
+\item[Full product bringup]{•}
+     {\href{https://github.com/bremenpl/BeagleNodeHW}{Beaglenode}}
+     {Authoring an open source/ open hardware project based on BeagleBone, which is under continuous development. It's aim is to allow for seamless lights and shutters control implementation in 110/ 230 V AC "star" shaped electrical home installations. The first hardware prototype was designed in Altium Designer. On the software side the product is being developed using the following technologies: Yocto, Qt, C++, MQTT.} 
+
+\item[Hardware and firmware development]{•}
+     {Production line conveyor}
+     {Designed the hardware and firmware for a multi-segment conveyor utilized in automotive parts production industry. The product allowed for transporting the required parts between different automatic assembly stages on the production line. It consisted of functionalities such as parts scanning and "traffic" mitigation.}  
 
 \end{yearlist}
 
