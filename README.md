@@ -1,2 +1,7 @@
 # cv
-My Curriculum vitae
+
+Build and open with:
+
+```
+pdflatex cv.tex && open cv.pdf
+```
