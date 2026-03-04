@@ -1,5 +1,5 @@
 \documentclass{tccv}
-\usepackage[polish]{babel}	
+\usepackage[polish]{babel}    
 \usepackage[utf8]{inputenc} % chars encoding
 \usepackage[T1]{fontenc} % polish fonts
 \usepackage[super]{nth} % 1st, 2nd etc
@@ -101,14 +101,21 @@ SMT machinery hardware assembly, faulty parts service, existing designs debuggin
 
 \section{Skills}
 
+% Define spacing variable for factlist
+\newlength{\factlistspacing}
+\setlength{\factlistspacing}{0.3cm}
+
 \begin{factlist}
 
+\vspace{\factlistspacing}
 \item{HW}
      {PCB design \& production, soldering, rapid prototyping, Altium Designer, Orcad/ Allegro, AVR, PIC, ARM, PowerPC, STM32, FPGA, C2000, MEMS, RF/analog, power electronics, low power, BMS, SBC}
 
+\vspace{\factlistspacing}
 \item{SW}
-     {Assembly, C, Modern C++, MISRA C, Qt, QML, Matlab, Plecs, Spice, GIT, VHDL, DSP, FreeRTOS, motor control, Buildroot/ Yocto (Poky), Linux drivers, IoT, MQTT, Modbus, Unit testing}
-     
+     {Assembly, C, Modern C++, Rust, MISRA C, Qt, QML, Matlab, Plecs, Spice, GIT, VHDL, DSP, FreeRTOS, motor control, Buildroot/ Yocto (Poky), Linux drivers, VPN, IoT, MQTT, Modbus, Unit testing, LLM}
+
+\vspace{\factlistspacing}
 \item{MISC}
      {Documentation (\LaTeX, Doxygen, Office), HW/SW product management (design, pricing, production, BOM optimization)}
 
@@ -117,21 +124,31 @@ SMT machinery hardware assembly, faulty parts service, existing designs debuggin
 \section{Communication}
 
 \begin{factlist}
+
+\vspace{\factlistspacing}
 \item{Polish}{Native language}
+
+\vspace{\factlistspacing}
 \item{English}{Full professional proficiency}
+
+\vspace{\factlistspacing}
 \item{German}{Elementary proficiency}
+
 \end{factlist}
 
 \section{Social networking}
 
 \begin{factlist}
 
+\vspace{\factlistspacing}
 \item{Linkedin}
      {\href{http://pl.linkedin.com/in/przenioslo}{linkedin.com/in/przenioslo}}
-     
+
+\vspace{\factlistspacing}
 \item{Github}
      {\href{http://github.com/bremenpl}{github.com/bremenpl}}
-     
+
+\vspace{\factlistspacing}
 \item{Github}
      {\href{http://github.com/przenioslo}{github.com/przenioslo}}
 
@@ -148,71 +165,71 @@ SMT machinery hardware assembly, faulty parts service, existing designs debuggin
 \section{Appendix A: extended competence list (Hardware)}
 
 \begin{itemize}
-	\item Digital circuits development based on discrete components or advanced IC's
-		\begin{itemize}
-			\item MCU based designs, using IC's such as ARM Cortex M0/M3/M4/M7, PIC, AVR or C2000 families,
-			\item CPU based designs, using IC's such as NXP i.MX 6 and i.MX 7 series application processors or TI AM335x Sitara application processors,
-			\item FPGA based designs, using IC's such as Xilinx Spartan family or Lattice Mach family,
-			\item experience in high speed designs for SBCs (Single Board Computers) consisting of memories IC's such as: NOR/ NAND Flash, DDR3 RAM, SD cards and eMMC chips, Sata drives,
-			\item familiar with high speed designs utilized for: 
-				\begin{itemize}
-				\item reducing cross-talk and distortions, 
-				\item reducing ground bounce, 
-				\item reducing radiation (EMI), 
-				\item differential pairs design and routing,
-				\end{itemize}
-			\item familiar with signaling/equalization and signal integrity provision techniques
-			\item knowledge about serial interfaces, such as: UART/ USART, I2C, I2S, SPI, QSPI, CAN, LIN, Ethernet, Ethercat.
-		\end{itemize}
+     \item Digital circuits development based on discrete components or advanced IC's
+          \begin{itemize}
+               \item MCU based designs, using IC's such as ARM Cortex M0/M3/M4/M7, PIC, AVR or C2000 families,
+               \item CPU based designs, using IC's such as NXP i.MX 6 and i.MX 7 series application processors or TI AM335x Sitara application processors,
+               \item FPGA based designs, using IC's such as Xilinx Spartan family or Lattice Mach family,
+               \item experience in high speed designs for SBCs (Single Board Computers) consisting of memories IC's such as: NOR/ NAND Flash, DDR3 RAM, SD cards and eMMC chips, Sata drives,
+               \item familiar with high speed designs utilized for: 
+                    \begin{itemize}
+                    \item reducing cross-talk and distortions, 
+                    \item reducing ground bounce, 
+                    \item reducing radiation (EMI), 
+                    \item differential pairs design and routing,
+                    \end{itemize}
+               \item familiar with signaling/equalization and signal integrity provision techniques
+               \item knowledge about serial interfaces, such as: UART/ USART, I2C, I2S, SPI, QSPI, CAN, LIN, Ethernet, Ethercat.
+          \end{itemize}
 \end{itemize}
 
 \begin{itemize}
-	\item Analog circuits development based on discrete components and dedicated IC's
-	\begin{itemize}
-		\item experience in audio analog front-end designs,
-		\item experience in building low voltage measurement circuits,
-		\item utilizing high resolution ADC's and DAC's,
-		\item good knowledge about analog circuits shielding and separation (i.e. ground start connections, guard rings, via shielding and stitching),
-		\item experience in RF analog front-end design. Utilized techniques: 
-		\begin{itemize}
-			\item output to antenna matching impedance circuits (Wavelength and Microstrip),
-			\item PCB antenna length tuning,
-			\item knowledge about network analyzer usage,
-		\end{itemize}		 
-		\item built devices in the following technologies/ frequencies (and wrote firmware for them):
-		\begin{itemize}
-			\item Wifi, 2.4 Ghz (ESP8266 and ESP32),
-			\item Zigbee, 2.4 Ghz and 868 Mhz (Digi Xbee Digimesh),
-			\item Bluetooth, 2.4 Ghz (Nordic NRF chips),
-			\item 2G/ 3G, ~820 - 2200 Mhz (u-Blox SARA U201), 
-		\end{itemize}
-		\item good knowledge about the principles of operation of the basic discrete components such as BJT's, Mosfets, OP Amp's, Flip-flops, Multiplexers/ Demultiplexers etc.
-	\end{itemize}
+     \item Analog circuits development based on discrete components and dedicated IC's
+     \begin{itemize}
+          \item experience in audio analog front-end designs,
+          \item experience in building low voltage measurement circuits,
+          \item utilizing high resolution ADC's and DAC's,
+          \item good knowledge about analog circuits shielding and separation (i.e. ground start connections, guard rings, via shielding and stitching),
+          \item experience in RF analog front-end design. Utilized techniques: 
+          \begin{itemize}
+               \item output to antenna matching impedance circuits (Wavelength and Microstrip),
+               \item PCB antenna length tuning,
+               \item knowledge about network analyzer usage,
+          \end{itemize}        
+          \item built devices in the following technologies/ frequencies (and wrote firmware for them):
+          \begin{itemize}
+               \item Wifi, 2.4 Ghz (ESP8266 and ESP32),
+               \item Zigbee, 2.4 Ghz and 868 Mhz (Digi Xbee Digimesh),
+               \item Bluetooth, 2.4 Ghz (Nordic NRF chips),
+               \item 2G/ 3G, ~820 - 2200 Mhz (u-Blox SARA U201), 
+          \end{itemize}
+          \item good knowledge about the principles of operation of the basic discrete components such as BJT's, Mosfets, OP Amp's, Flip-flops, Multiplexers/ Demultiplexers etc.
+     \end{itemize}
 \end{itemize}
 
 \begin{itemize}
-	\item Power electronics circuits development based on discrete components and dedicated IC's
-	\begin{itemize}
-		\item motor control drivers (from ground-up) for the following motor types: Stepper motors, DC motors, VCM (Voice coil) motors, BLDC and PMSM,
-		\item experience in creating hardware for industry grade robots utilized in SMT production, such as: Pick and Place machines, Stencil printers, conveyors and reflow ovens,
-	\item DC-DC converters (Buck and Boost converters),
-	\item built and programmed high voltage/ current (Lithium and Lead acid based) Battery Management Systems (BMS) and Uninterruptible power supplies (UPS) for power backup applications (civil, maritime and medical),
-	\item experience in building various battery chemistry devices and chargers (i.e.: Li-ion, Li-pol, LiFePo4 (LFP), Nimh, lead acid), 
-	\item experience in building low power, energy harvesting, battery powered IoT devices.
-	\end{itemize}
+     \item Power electronics circuits development based on discrete components and dedicated IC's
+     \begin{itemize}
+          \item motor control drivers (from ground-up) for the following motor types: Stepper motors, DC motors, VCM (Voice coil) motors, BLDC and PMSM,
+          \item experience in creating hardware for industry grade robots utilized in SMT production, such as: Pick and Place machines, Stencil printers, conveyors and reflow ovens,
+     \item DC-DC converters (Buck and Boost converters),
+     \item built and programmed high voltage/ current (Lithium and Lead acid based) Battery Management Systems (BMS) and Uninterruptible power supplies (UPS) for power backup applications (civil, maritime and medical),
+     \item experience in building various battery chemistry devices and chargers (i.e.: Li-ion, Li-pol, LiFePo4 (LFP), Nimh, lead acid), 
+     \item experience in building low power, energy harvesting, battery powered IoT devices.
+     \end{itemize}
 \end{itemize}
 
 \begin{itemize}
-	\item CAD/ CAM/ Simulation technologies, tools knowledge and usage experience:
-	\begin{itemize}
-		\item long time Altium Designer user,
-		\item experience in schematics design and simulation,
-		\item experience in mixed signals design's PCB creation consisting of up to 12 layers stackups,
-		\item experience in creating multi PCB designs
-		\item experience in using SPICE and other simulation tools, such as: LTSpice, SIMetrix, Simulink, Plecs,
-		\item experience in WiFi technology based (incl. AX) hardware development and testing.
-		
-	\end{itemize}
+     \item CAD/ CAM/ Simulation technologies, tools knowledge and usage experience:
+     \begin{itemize}
+          \item long time Altium Designer user,
+          \item experience in schematics design and simulation,
+          \item experience in mixed signals design's PCB creation consisting of up to 12 layers stackups,
+          \item experience in creating multi PCB designs
+          \item experience in using SPICE and other simulation tools, such as: LTSpice, SIMetrix, Simulink, Plecs,
+          \item experience in WiFi technology based (incl. AX) hardware development and testing.
+          
+     \end{itemize}
 \end{itemize}
      
 \clearpage
@@ -220,57 +237,58 @@ SMT machinery hardware assembly, faulty parts service, existing designs debuggin
 \section{Appendix B: extended competence list (Software)}
 
 \begin{itemize}
-	\item Hardware description languages:
-	\begin{itemize}
-		\item proficient in VHDL code design,
-		\item less experienced in Verilog code design. 
-	\end{itemize}
-	\item Assembly
-		\begin{itemize}
-			\item experienced in AVR Assembler space efficient code development for memory constrained devices,
-			\item generic knowledge of ARM and x86 assemblers for debugging purposes.
-		\end{itemize}
-	\item C/ C++
-		\begin{itemize}
-			\item long time experience in C89, C99 and C11 standars usage,
-			\item bare metal applications (no operating system),
-			\item real time operating systems applications, such as FreeRTOS,
-			\item embedded Linux based applications (ARM and PowerPC),
-			\item high efficiency x86 multiplatform applications,
-			\item Linux Kernel drivers development (character and network),
-			\item knowledge in the memory management field (MMU, DMA, dynamic memory allocation, memory structure architectures),
-			\item experience in multiprocess and multithread applications (good knowledge of multithreading principles),
-			\item experience in using generic and self written DSP libraries for applications such as: PID control, Fuzzy Logic control, audio signals processing, measurement data processing).
-			\item experience in using MISRA C and various Linter applications.
-			\item long time experience in designing firmware for various power management devices (BMS, UPS, motor control, switched converters).
-			\item long time experience in various Bootloader programs design.
-			\item long time experience in C++11, C++14 and C++17 standards,
-			\item build efficient applications for multiple operating systems: Windows, Linux, Mac OS, iOS, Android,
-			\item utilizing modern C++ concepts, such as Smart Pointers, Futures, Lambdas, Templates, Move semantics,
-			\item familiar with design patterns and principles such as SOLID or RAII,
-			\item familiar with Unit Testing principles,
-			\item experience in multithreaded application in low and high level domain,
-			\item long time experience in using Qt with QML and/ or Felgo frameworks. Utilized Qt technology for building truly multiplatform (desktop and mobile) applications,
-			\item experience in creating event driven applications,
-			\item built both backend (headless) and front end (GUI) applications,
-			\item knowledge about maintaining good balance between code readability/ quality and high performance,
-			\item knowledge of data structures and algorithms,
-			\item experience with serial protocol layers such as CANopen, TML CAN or Modbus RTU,
-			\item experience in both low level (TCP/IP, UDP) and high level (HTTP, FTP, SFTP, OPCUA, MQTT, Modbus TCP/IP etc.) networking protocols and applications.
-		\end{itemize}
-	\item Tools and Operating Systems
-		\begin{itemize}
-			\item proficient in Unix/Linux, Windows and MacOs environments,
-			\item Linux build systems maintenance and design using Buildroot and Yocto (Poky) tools,
-			\item familiar with make, qmake and cmake building tools,
-			\item worked with multiple compilers: MSVC, GCC and LLVM,
-			\item working efficiently with GIT version control (and SVN if forced to),
-			\item familiar with Valgrind dynamic analysis tool,
-			\item familiar with GDB debugging tool both locally and remotely,		
-			\item familiar with Gtest, Ceedling and Catch2 unit testing frameworks, 	
-			\item familiar with Jira and Confluence management and documentations tools.		
-			
-		\end{itemize}
+     \item Hardware description languages:
+     \begin{itemize}
+          \item proficient in VHDL code design,
+          \item less experienced in Verilog code design. 
+     \end{itemize}
+     \item Assembly
+          \begin{itemize}
+               \item experienced in AVR Assembler space efficient code development for memory constrained devices,
+               \item generic knowledge of ARM and x86 assemblers for debugging purposes.
+          \end{itemize}
+     \item C/ C++/ Rust
+          \begin{itemize}
+               \item long time experience in C89, C99 and C11 standards usage,
+               \item bare metal applications (no operating system),
+               \item real time operating systems applications, such as FreeRTOS,
+               \item embedded Linux based applications (ARM and PowerPC),
+               \item high efficiency x86/ ARM multiplatform applications using C, C++ and Rust,
+               \item Linux Kernel drivers development (character and network),
+               \item Linux userspace low level programming (functions hooking and interception, runtime patching),
+               \item knowledge in the memory management field (MMU, DMA, dynamic memory allocation, memory structure architectures),
+               \item experience in multiprocess and multithread applications (good knowledge of multithreading principles),
+               \item experience in using generic and self written DSP libraries for applications such as: PID control, Fuzzy Logic control, audio signals processing, measurement data processing).
+               \item experience in using MISRA C and various Linter applications.
+               \item long time experience in designing firmware for various power management devices (BMS, UPS, motor control, switched converters).
+               \item long time experience in various Bootloader programs design.
+               \item build efficient applications for multiple operating systems: Windows, Linux, Mac OS, iOS, Android,
+               \item long time experience in C++11 and higher standards. Utilizing modern concepts, such as Smart Pointers, Futures, Lambdas, Templates, Move semantics,
+               \item familiar with design patterns and principles such as SOLID or RAII,
+               \item familiar with Unit Testing principles,
+               \item experience in multithreaded application in low and high level domain,
+               \item long time experience in using Qt with QML and/ or Felgo frameworks. Utilized Qt technology for building truly multiplatform (desktop and mobile) applications,
+               \item experience in creating event driven applications,
+               \item built both backend (headless) and front end (GUI) applications,
+               \item knowledge about maintaining good balance between code readability/ quality and high performance,
+               \item experience with serial protocol layers such as CANopen, TML CAN or Modbus RTU,
+               \item experience in both low level (TCP/IP, UDP) and high level (HTTP, FTP, SFTP, OPCUA, MQTT, Modbus TCP/IP etc.) networking protocols and applications,
+               \item Experience with VPN protocols based applications development (client and server side),
+               \item Experience in building LLM based applications. Utilizing various AI models as tools for daily tasks.
+          \end{itemize}
+     \item Tools and Operating Systems
+          \begin{itemize}
+               \item proficient in Unix/Linux, Windows and MacOs environments,
+               \item Linux build systems maintenance and design using Buildroot and Yocto (Poky) tools,
+               \item familiar with make, qmake and cmake building tools,
+               \item worked with multiple compilers: MSVC, GCC and LLVM,
+               \item working efficiently with GIT version control (and SVN if forced to),
+               \item familiar with Valgrind dynamic analysis tool,
+               \item familiar with GDB debugging tool both locally and remotely,          
+               \item familiar with Gtest, Ceedling and Catch2 unit testing frameworks,    
+               \item familiar with Jira and Confluence management and documentations tools.         
+               
+          \end{itemize}
 \end{itemize}
 
 \clearpage
@@ -278,24 +296,24 @@ SMT machinery hardware assembly, faulty parts service, existing designs debuggin
 \section{Appendix C: extended competence list (Miscellaneous)}
 
 \begin{itemize}
-	\item Proficient in documentation preparation using 
-	\begin{itemize}
-		\item \LaTeX, 
-		\item Doxygen,
-		\item MS Office/ Libre Office
-		\item Confluence
-	\end{itemize}
-	\item experience in hardware, software and mixed type of products leading in small teams. Long time interdisciplinary experience provides good diversity for various projects,
-	\item can act as a standalone developer or a team player in a project,
-	\item good at multitasking, can handle multiple sub-tasks simultaneously,
-	\item experienced with developer to client relations handling,
-	\item experienced with client to ODM relations handling,
-	\item good at Power Point presentations (both preparing and giving them),
-	\item experienced with working in multicultural environments.
-	\item experienced with leading engineering teams in various embedded projects.
-	\item experienced in 3D design (Rhino) and general 3D printing (mostly for support products, such as electronics devices prototype cases).
-	\item long time Beaglebone and Raspberry Pi based systems designer (HW and FW/ SW).
-	 
+     \item Proficient in documentation preparation using 
+     \begin{itemize}
+          \item \LaTeX, 
+          \item Doxygen,
+          \item MS Office/ Libre Office
+          \item Confluence
+     \end{itemize}
+     \item experience in hardware, software and mixed type of products leading in small teams. Long time interdisciplinary experience provides good diversity for various projects,
+     \item can act as a standalone developer or a team player in a project,
+     \item good at multitasking, can handle multiple sub-tasks simultaneously,
+     \item experienced with developer to client relations handling,
+     \item experienced with client to ODM relations handling,
+     \item good at Power Point presentations (both preparing and giving them),
+     \item experienced with working in multicultural environments.
+     \item experienced with leading engineering teams in various embedded projects.
+     \item experienced in 3D design (Rhino) and general 3D printing (mostly for support products, such as electronics devices prototype cases).
+     \item long time Beaglebone and Raspberry Pi based systems designer (HW and FW/ SW).
+      
 \end{itemize}
 
 \clearpage
@@ -327,6 +345,10 @@ This section lists some of the companies (clients or employers) I have worked fo
      {West Pomeranian University of Technology}
      {contact: \href{https://www.linkedin.com/in/krzysztof-penkala-4a498a26/}{Linkedin}}
      
+\item[Tomasz Sokolowski (Delivery manager)]{•}
+     {Sii Sp. z o.o.}
+     {contact: \href{https://www.linkedin.com/in/tomsok}{Linkedin}}
+
 \item[Vinit Dipak Gandhi (Head of Business Development)]{•}
      {Global Power Source Pte. Ltd. }
      {contact: \href{https://www.linkedin.com/in/vinit-dipak-gandhi-71782612}{Linkedin}}
@@ -334,10 +356,18 @@ This section lists some of the companies (clients or employers) I have worked fo
 \item[Kamil Lata (Project manager]{•}
      {LINA Medical Polska Sp. z o.o.}
      {contact: \href{https://www.linkedin.com/in/kamil-lata-a71a41138}{Linkedin}}
+
+\item[Marcin Nowakowski (Team leader)]{•}
+     {Conclusive Engineering Sp. z o.o.}
+     {contact: \href{https://www.linkedin.com/in/marcin-nowakowski-technology}{Linkedin}}
      
 \item[Robert Rak (CCO)]{•}
      {Apptimia Sp. z o.o.}
      {contact: \href{https://www.linkedin.com/in/robert-rak-4018a64a}{Linkedin}}
+
+\item[Eylon Rosenfeld (Engineering Manager)]{•}
+     {Sternum}
+     {contact: \href{https://www.linkedin.com/in/eylon-rosenfeld}{Linkedin}}
 
 \item[Michał Bonisławski (CCO)]{•}
      {Mpower Sp. z o.o.}
@@ -392,6 +422,10 @@ The section presents some of the projects I have participated in commercially. I
 \end{yearlist}
 
 \begin{yearlist}
+
+\item[Firmware and software development]{•}
+     {Baseboard Management Controller (BMC)}
+     {Designed and maintained the firmware/ software for a BMC, which was used in super-computer grade hardware.}
      
 \item[Firmware development]{•}
      {Automatic feeder controller}
@@ -401,6 +435,10 @@ The section presents some of the projects I have participated in commercially. I
      {Smart UPS}
      {Designed the hardware and firmware for a multi-functional UPS device intended for the maritime market. It allowed for the configuration of most of the electrical, operational parameters (over multiple USB endpoints/ protocols). It consisted of multiple electrical protections (implemented in hardware in firmware) and allowed for smart charging and discharging of the cells to optimize energy utilization.}
      
+\item[Software development]{•}
+     {Linux device OS protection suite}
+     {Developed Linux runtime process protection software. It allowed for runtime protecting Linux OS based devices from hacker attacks based on memory manipulation. Provided the end user with telemetry related with the stopped/ detected events.}
+
 \item[Hardware and firmware development]{•}
      {Soldering paste dispenser head}
      {Designed the hardware and firmware for a multi-functional/ multi-modal soldering paste dispenser head mounted in a Pick \& Place machine. It allowed for efficient soldering paste distribution over different subtracts (mostly PCBs), utilizing different dispensing methods (i.e., solder paste squeezing or "spitting"). It kept the mounted solder paste within a controlled temperature to avoid drying.}
